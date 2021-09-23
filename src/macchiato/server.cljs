@@ -4,8 +4,6 @@
     [macchiato.fs :as fs]
     [macchiato.http :as http]))
 
-(def ^:no-doc ws (node/require "ws"))
-
 (defn http-server
   ":host - hostname to bind
   :port - HTTP port the server will listen on
@@ -63,9 +61,3 @@
     :https (https-server opts)
     :ipc (ipc-server opts)
     (throw (js/Error. (str "Unrecognized protocol: " protocol " must be :http, :https, or :ipc")))))
-
-(defn start-ws
-  "starts a WebSocket server given a handler and a Node server instance"
-  [server handler & [opts]]
-  (let [^js wss (ws.Server. #js{:server server})]
-    (.on wss "connection" (http/ws-handler handler opts))))
