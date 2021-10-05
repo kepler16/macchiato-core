@@ -4,7 +4,7 @@
   <groupId>macchiato</groupId>
   <artifactId>core</artifactId>
   <packaging>jar</packaging>
-  <version>0.2.22</version>
+  <version>0.2.23</version>
   <name>core</name>
   <description>ClojureScript Ring style HTTP server abstraction for Node.js.</description>
   <url>https://github.com/yogthos/macchiato-framework/macchiato-core</url>
@@ -18,7 +18,7 @@
     <url>https://github.com/macchiato-framework/macchiato-core.git</url>
     <connection>scm:git:git://github.com/kepler16/macchiato-core.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/kepler16/macchiato-core.git</developerConnection>
-    <tag>6b684155b2854ba98aeb957d091e168423ea08e4</tag>
+    <tag>f0f2902420e98a283669f82605679bf867b10386</tag>
   </scm>
   <build>
     <sourceDirectory>src</sourceDirectory>
